@@ -1,0 +1,6 @@
+[submodule "thirdparty/glew-cmake"]
+	path = thirdparty/glew-cmake
+	url = https://github.com/Perlmint/glew-cmake.git
+[submodule "thirdparty/assimp"]
+	path = thirdparty/assimp
+	url = https://github.com/assimp/assimp.git
