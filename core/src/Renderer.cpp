@@ -172,7 +172,7 @@ void Renderer::configure_TrisMesh_SSBO_block()
 void Renderer::update_TrisMesh_SSBO_block()
 {
 	GLCall(glBindBuffer(GL_SHADER_STORAGE_BUFFER, tris_SSBO_ID));
-	GLCall(glBufferSubData(GL_SHADER_STORAGE_BUFFER, 0, sizeof(Triangle) * BVH_of_mesh.TRIANGLES_size, BVH_of_mesh.TRIANGLES.data()))
+	GLCall(glBufferSubData(GL_SHADER_STORAGE_BUFFER, 0, sizeof(Triangle) * BVH_of_mesh.TRIANGLES_size, BVH_of_mesh.TRIANGLES.data()));
 	GLCall(glBindBuffer(GL_SHADER_STORAGE_BUFFER, 0)); // unbind
 }
 

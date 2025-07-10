@@ -35,7 +35,7 @@ void ComputeShader::DrawCall(unsigned int workGroups_x, unsigned int workGroups_
 	this->workGroups_y = workGroups_y;
 	this->workGroups_z = workGroups_z;
 	glDispatchCompute(workGroups_x, workGroups_y, workGroups_z);
-	GLCall(glMemoryBarrier(GL_ALL_BARRIER_BITS))
+	GLCall(glMemoryBarrier(GL_ALL_BARRIER_BITS));
 }
 
 std::string ComputeShader::ParseShader(const std::string& filepath)
