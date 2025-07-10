@@ -33,6 +33,7 @@ cd build/
 cmake ..
 cmake --build .
 ```
+4. Run the program (`./raytracing`)
 #### Debugging breakpoints
 uncomment this macro definition:
 
