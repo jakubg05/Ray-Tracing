@@ -1,6 +1,11 @@
 # Ray Tracing from scratch in C++
-You can watch a YouTube video about this project [here](https://youtu.be/wzZJzyX0UkI) <i>(or click the image)</i>.<br>
+> ⚠️ The `main` branch is currently going through a big internal rework — I’m planning to merge a bunch of changes I’ve been working on in the next few weeks.  
+> 
+> In the meantime, feel free to open pull requests against the `community` branch so things don’t get lost or conflict with the upcoming update.
+> 
+> Thanks for contributing!
 
+You can watch a YouTube video about this project [here](https://youtu.be/wzZJzyX0UkI) <i>(or click the image)</i>.<br>
 [![image](https://raw.githubusercontent.com/jakubg05/images/main/RayTracing.png)](https://youtu.be/wzZJzyX0UkI)
 
 ## Building The Project
