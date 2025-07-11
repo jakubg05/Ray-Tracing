@@ -1,5 +1,12 @@
-# Ignore all files in the current directory
+# Ignore everything
 *
 
-# Unignore the .gitignore file
+# Allow this folder to be tracked
+!*/
+
+# Unignore the specific file
+!stanford_dragon_pbr.glb
+!model-credits.txt
+
+# Optional: also keep the .gitignore itself
 !.gitignore
