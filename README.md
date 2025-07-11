@@ -17,6 +17,28 @@ git submodule update --init --recursive
 4. Create a Release configuration by clicking the x64-Debug dropdown and adding x64-Release.
 5. Choose raytracing.exe from the box on the right and hit the run button.
 
+### Linux (CMake)
+
+1. Clone this repository (s. above)
+2. Install required libraries:
+ * libxinerama
+ * libxi
+
+(ubuntu command: `sudo apt install -y libxinerama-dev libxi-dev`)
+
+3. Compile
+```bash
+mkdir build
+cd build/
+cmake ..
+cmake --build .
+```
+4. Run the program (`./raytracing`)
+#### Debugging breakpoints
+uncomment this macro definition:
+
+`#define DEBUG_BREAK() /*raise(SIGTRAP)*/`
+
 ## Project Structure and CMake
 
 * **Core as a Static Library:** The `core` directory contains its own CMakeLists.txt file and is configured to be built as a static library. This means the compiled code from the `core` directory is packaged into a single `.lib` (Windows) or `.a` (Linux) file.
